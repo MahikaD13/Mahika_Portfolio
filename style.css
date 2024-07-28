@@ -636,7 +636,7 @@ form btn2{
   and (orientation: landscape) {
 
     #about{
-        margin-top: 200px;
+        margin-top: 500px;
         color: #159da7;
     }
 }
