@@ -779,11 +779,11 @@ form btn2{
         min-height: 150px; /*changes*/
     }
 }
-@media only screen and (min-width:700px) and (orientation:landscape){
+@media only screen and (max-width:800px) and (orientation:landscape){
     #about{
         margin-top: 300px;
     }
-    .about-col-1 ,.about-col-2{
+    .about-col-1 .about-col-2{
         flex-basis: 100%
     }
 }
