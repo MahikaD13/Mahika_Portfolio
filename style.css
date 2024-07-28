@@ -782,14 +782,9 @@ form btn2{
 @media only screen and (max-width:800px) and (orientation:landscape){
     #about{
         margin-top: 300px;
+        width: 100%;
     }
-    .about-col-1 img{
-        width: 100px;
-        height: 100px;
-    }
-    .about-col-2{
-        align-content: end;
-    }
+    
 }
 #msg{
     color: #61b752;
