@@ -629,6 +629,18 @@ form btn2{
     font-weight: 300;
     margin-top: 20px;
 }
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) 
+  and (orientation: landscape) {
+  div {
+    #about{
+        margin-top: 200px;
+        color: #159da7;
+    }
+  }
+}
 /* -----------css for small screen-------- */ 
  nav .fa-solid{
     display: none;
