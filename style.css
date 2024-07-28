@@ -787,6 +787,9 @@ form btn2{
         width: 100px;
         height: 100px;
     }
+    .about-col-2{
+        align-content: end;
+    }
 }
 #msg{
     color: #61b752;
