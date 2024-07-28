@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/50c3491730.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="one">
+        <div class="contain">
+         <h1 id="heading">Mahika Dawar</h1>   
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="#heading">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Education</a></li>
+                    <li><a href="#skills1">Skills</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+
+                    <i class="fa-sharp fa-solid fa-xmark"  onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </div>
+        <div class="mainpage">
+        <div class="header-text">
+            <!-- <p>WEB DEVELOPER</p> -->
+            <h1> Hi I'm <span> Mahika <br>Dawar </span> from India</h1>
+             <!-- Element to contain animated typing -->
+						<div id="typing-animation"></div>
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Data Analyst  ',
+						'Software Engineer ',
+						'Developer  ',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+        </div>
+        <div class="emoji">
+        <img src="./images/hi (1).png" alt="my bitmoji">
+        </div>
+        </div>
+    </div>
+    <!--------------about------------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                 <img src="images/1697556012438.jpg" alt="this is me">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title2">About me</h1><br>
+                    <p class="about-me"> I am an undergraduate student pursuing Btech CSE from DIT University, Dehradun. I live in Dehradun , Uttarakhand. 
+                        I am passionate about leveraging technology to solve real-world problems. I have developed strong analytical and programming skills through various academic projects. 
+                        With a keen interest in software development and data analysis, I am eager to apply my knowledge and skills in a dynamic work environment.
+                        My goal is to secure a challenging position in a reputable organization where I can contribute to innovative projects and grow both personally and professionally.
+                    </p>
+                    <a href="./CV.pdf" download class="btn btn2">Download CV</a>
+                    <!-- <div class="tab-titles">
+                        <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div> -->
+                    <!-- <div class="Tab-content active-tab" id="skills">
+                        <ul>
+                            <li><span>java</span><br>Programming Language </li>
+                            <li><span>python</span><br>Programming Language</li>
+                            <li><span>C</span><br>Programming Language</li>
+                            <li><span>HTML/CSS</span><br>Programming Language</li>
+                            <li><span>SQL</span><br>Database Language</li>
+                        </ul>
+                    </div> -->
+                    <!-- <div class="Tab-content" id="experience">
+                        <ul>
+                            <li><span>22nd June 2024 - 20th July 2024</span><br><i>Data Science Intern at Cipherbyte Technologies</i><br>
+                            <div class="intern">During my internship, I completed projects where i analyzed large datasets using python.
+                                These experiences have honed my ability to identify patterns, build machine learnig models, 
+                                and communicate findings effectively. I am particularly interested in how data science 
+                                can enhance customer experience and operational efficiency.
+                            </div></li>
+                            <li><span>30th May 2024 - 12th July 2024</span><br><i>Summer Trainee at DEAL</i>
+                            <div></div></li>
+                        </ul>
+                    </div> -->
+                    <!-- <div class="Tab-content" id="education">
+                        <ul>
+                            <li><span>Higher School Education</span><br>Ann Mary School in Dehradun<br>Percentage:<br>Class XII- 91% <br> Class X- 95%</li>
+                            <li><span>Btech in Computer Science</span><br>DIT University in Dehradun<br>Current CGPA: 9.23</li>
+                        </ul>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------services----------- -->
+    <div id="services">
+        <div>
+            <h2 class="sub-title">Education</h2>
+        </div>
+        <div class="box box2" >
+            <div class="card">
+                <h5>Btech in Computer Science</h5>
+                <div class="pra">
+                    <h3><i>DIT University</i></h3>
+                <p> Current CGPA: 9.23</p>
+                </div>
+           </div>
+           <div class="card">
+            <h5>Higher School Education</h5>
+            <div class="pra">
+                <h3><i>Ann Mary School</i></h3>
+            <p>Class XII - 91.2%<br> Class X - 95%</p>
+            </div>
+           </div>
+        </div>
+        </div> 
+    </div>
+    <!-- ----------skills----------->
+     <section id="skills1" class="skills1">
+        <div class="main-text">
+            <span>Technical Skills and Internships</span>
+            <h2 class="sub-title">My Skills</h2>
+        </div>
+        <div class="skill-main">
+        <div class="skill-left">
+            <h3>Technical Skills</h3>
+            <div class="skill-bar">
+                <div class="info">
+                    <p>HTML</p>
+                    <p>72%</p>
+                </div>
+                <div class="bar">
+                    <span class="html"></span>
+                </div>
+            </div>
+            <div class="skill-bar">
+                <div class="info">
+                    <p>CSS</p>
+                    <p>70%</p>
+                </div>
+                <div class="bar">
+                    <span class="css"></span>
+                </div>
+            </div>
+            <div class="skill-bar">
+                <div class="info">
+                    <p>Java</p>
+                    <p>60%</p>
+                </div>
+                <div class="bar">
+                    <span class="java"></span>
+                </div>
+            </div>
+            <div class="skill-bar">
+                <div class="info">
+                    <p>Python</p>
+                    <p>72%</p>
+                </div>
+                <div class="bar">
+                    <span class="python"></span>
+                </div>
+            </div>
+            <div class="skill-bar">
+                <div class="info">
+                    <p>SQL</p>
+                    <p>70%</p>
+                </div>
+                <div class="bar">
+                    <span class="sql"></span>
+                </div>
+            </div>
+        </div>
+        <div class="skill-right">
+            <h3>Internships</h3>
+            <div class="list-items">
+                <ul>
+                    <li class="class-items">
+                        <span>22 June 2024- 20 July 2024</span> <a href="https://drive.google.com/file/d/1SPKFRu6GBZpImDs9YKynZ3wV6LIlXbLo/view?usp=sharing"><i class="fa-solid fa-link"></i></a>
+                        <p><i>Intern at Cipherbyte Technologies</i></p>
+                    </li>
+                    <li class="class-items">
+                        <span>During my internship, I completed projects where i analyzed large datasets using python.
+                            These experiences have honed my ability to identify patterns, build machine learnig models, 
+                            and communicate findings effectively.
+                        </span>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+        
+     </section>
+
+    <!-- ----------portfolio-----------> 
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/Spam Mail.jpg" alt="">
+                    <div class="layer"><h3>Spam Email Detection
+                    </h3> 
+                    <p>A machine learning model whose task is to filter unwanted or malicious emails, It has a userfriendly interface that
+                       classify emails or sms as spam or not spam(ham). </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                </div>
+                <div class="work">
+                    <img src="images/brick_breaker.png" alt="">
+                    <div class="layer"><h3>Brick Breaker</h3> 
+                    <p>The Brick Breaker game, also known as Breakout, is a classic arcade game where the player's objective is to break
+                         all the bricks on the screen using a ball that bounces off a paddle controlled by the player.It also calculates 
+                         score as the ball hits the brick.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                </div>
+                <div class="work">
+                    <img src="images/book.jpg" alt="">
+                    <div class="layer"><h3>Book Recommendation System</h3>
+                    <p>A Machine learning model that displays similar type of books as suggested by user which has a top ratings. </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+    <!-- ----------content---------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title2">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>
+                        dmahika13@gmail.com
+                    </p>
+                    <p><i class="fa-sharp fa-solid fa-square-phone"></i>
+                        8218275281</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/accounts/login/?hl=en"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.linkedin.com/in/mahika-dawar-2b6a4a215/"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Mahika - All Rights Reserved</p>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("Tab-content");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-links");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-links");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemen = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemen.style.right = "0";
+        }
+        function closemenu(){
+            sidemen.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbztAFldIyxY379J66Ffxz0a_f8AeMafV44UhBk3xi6JZw_DCMEhxA-PSngECKKEqAZp/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const mssg= document.getElementById("msg")
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                mssg.innerHTML = "Your response has been submitted successfully"
+                setTimeout(function(){
+                    mssg.innerHTML=""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
