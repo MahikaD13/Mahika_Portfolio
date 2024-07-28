@@ -634,9 +634,9 @@ form btn2{
     display: none;
  }
  @media only screen and (max-width:600px) {
-    /* #one{
+    #one{
         display: contents;
-    } */
+    }
     .emoji img{
         width: 100%;
         height: 250px; 
