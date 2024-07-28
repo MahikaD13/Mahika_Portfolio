@@ -756,8 +756,8 @@ form btn2{
         padding: 10px;
     }
     .skill-right{
-        margin-left: 100px;
-        margin-right: 100px;
+        margin-left: 10%;
+        margin-right: 10%;
     }
     .skill-left{
        margin-left: 100px;
