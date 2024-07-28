@@ -784,7 +784,12 @@ form btn2{
         margin-top: 300px;
         width: 100%;
     }
-    
+    .about-col-1{
+        flex-basis: 20%;
+    }
+    .about-col-2{
+        flex-basis: 40%;
+    }
 }
 #msg{
     color: #61b752;
