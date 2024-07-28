@@ -9,7 +9,7 @@
 body{
     background: black;
     color: white;
-    
+    height: webkit-fill-available;
 }
 html{
     scroll-behavior: smooth;
