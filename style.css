@@ -790,6 +790,9 @@ form btn2{
     .about-col-2{
         flex-basis: 40%;
     }
+    .about-col-1 img{
+        width: fit-content;
+    }
 }
 #msg{
     color: #61b752;
